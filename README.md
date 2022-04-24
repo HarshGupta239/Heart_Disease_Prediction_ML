@@ -26,31 +26,31 @@ I have use the "Logistic Regression" algorithm to train the model because our ta
 17. target: Heart disease (0= no, 1= yes).
 # Data Preprocessing Steps:
 1. Data cleaning: 
-   * In this, we remove all NULL values using 'dropna'.
-   * Then, we have checked whether there is any NULL value present or not using  
+   * In this, I remove all NULL values using 'dropna'.
+   * Then, I have checked whether there is any NULL value present or not using  
      df.isnull().any().
 
 
 2. Data reduction:
-   * In dat reduction, we remove some unwanted columns.
+   * In data reduction, I remove some unwanted columns.
         - pid
         - smoke
         - famhist
 3. Data encoding:
-   * In this, we replace some column values with Numeric values.
+   * In this, I replace some column values with numeric values.
         Example: 
-                 -  In column ‘Sex’, we replace ‘M’ with 1 and ‘F’ 
+                 -  In column ‘Sex’, I replace ‘M’ with 1 and ‘F’ 
                     with 0.
-                 -  In column 'cp', we replace 'Typical Angina' with 1, Atypical Angina with 2,                     Non-Angina pain with 3, 'Asymtomatic' with 4.
-   * As in column ‘fbs’, we replace ‘TRUE’ values with 1 and ‘FALSE’ values with 0. So, 
-     we have to change the datatype also from ‘boolean’ to ‘int’.
+                 -  In column 'cp', I replace 'Typical Angina' with 1, Atypical Angina with 2,                     Non-Angina pain with 3, 'Asymtomatic' with 4.
+   * As in column ‘fbs’, I replace ‘TRUE’ values with 1 and ‘FALSE’ values with 0. So, 
+     I have to change the datatype also from ‘boolean’ to ‘int’.
      
 4. Normalization:
-   * We need normalization because in our case, values of all attributes differ very much from        each other.
+   * I need normalization because in this case, values of all attributes differ very much from        each other.
 
 # Separating and Splitting of data.
-* First of all, we separate the X and Y values.
-* Then , we split the data into 'train' and 'test' data.
+* First of all, I separate the X and Y values.
+* Then, I split the data into 'train' and 'test' data.
 
 # Apply Logistic Regression and check accuracy.
 * The maximum accuracy achieved on training data is: 88.01 %.
