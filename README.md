@@ -26,10 +26,37 @@ I have use the "Logistic Regression" algorithm to train the model because our ta
 17. target: Heart disease (0= no, 1= yes).
 # Data Preprocessing Steps:
 1. Data cleaning: 
-2. * In this, we remove all NULL values using 'dropna'.
-3. * Then, we have checked whether there is any NULL value present or not using  
-4    df.isnull().any().
+   * In this, we remove all NULL values using 'dropna'.
+   * Then, we have checked whether there is any NULL value present or not using  
+     df.isnull().any().
 
 
-5. 
+2. Data reduction:
+   * In dat reduction, we remove some unwanted columns.
+        - pid
+        - smoke
+        - famhist
+3. Data encoding:
+   * In this, we replace some column values with Numeric values.
+        Example: 
+                 -  In column ‘Sex’, we replace ‘M’ with 1 and ‘F’ 
+                    with 0.
+                 -  In column 'cp', we replace 'Typical Angina' with 1, Atypical Angina with 2,                     Non-Angina pain with 3, 'Asymtomatic' with 4.
+   * As in column ‘fbs’, we replace ‘TRUE’ values with 1 and ‘FALSE’ values with 0. So, 
+     we have to change the datatype also from ‘boolean’ to ‘int’.
+     
+4. Normalization:
+   * We need normalization because in our case, values of all attributes differ very much from        each other.
 
+# Separating and Splitting of data.
+* First of all, we separate the X and Y values.
+* Then , we split the data into 'train' and 'test' data.
+
+# Apply Logistic Regression and check accuracy.
+* The maximum accuracy achieved on training data is: 88.01 %.
+* The maximum accuracy achieved on test data is: 83.60 %.
+
+# Predict the target values.
+* In this, a set of input features is given to the model and then, the model will predict         whether the patient has heart disease or not.
+* If the value of target variable is 1, then, the patient has heart disease. Otherwise, not.
+     
