@@ -54,7 +54,7 @@ I have use the "Logistic Regression" algorithm to train the model because our ta
 
 # Apply various ML algorithms.
 * On training data: Maximum accuracy is achieved by SVM, i.e, 92.97%
-* On testing data: Maximum accuracy is achieved by SVM, i.e, 83.60%
+* On testing data: Maximum accuracy is achieved by Logistic Regression, i.e, 83.60%
 # Predict the target values.
 * In this, a set of input features is given to the model and then, the model will predict         whether the patient has heart disease or not.
 * If the value of target variable is 1, then, the patient has heart disease. Otherwise, not.
